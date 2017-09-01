@@ -14,3 +14,7 @@
 See code in `/src`. The test that fails is the one labeled `should redirect passed component when no token is passed`.
 
 What's special about this test is that it return a `<Redirect />`. The other tests never render a `<Redirect />` and pass with both sets of dependencies.
+
+The failing yarn.lock installs `react-router@4.2.0` even when `react-router-dom` is locked to `4.1.2`
+
+The passing yarn.lock has both `react-router` and `react-router-dom` pinned to `4.1.2`
